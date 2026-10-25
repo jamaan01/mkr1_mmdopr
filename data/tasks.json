@@ -1,0 +1,82 @@
+[
+  {
+    "id": "J1",
+    "name": "Аналіз вимог",
+    "duration": 3,
+    "priority": 5,
+    "predecessors": [],
+    "requiredSpecializations": ["Бізнес-аналіз і проєктування"],
+    "hours": 24,
+    "assignees": ["P1"]
+  },
+  {
+    "id": "J2",
+    "name": "Проєктування архітектури",
+    "duration": 4,
+    "priority": 5,
+    "predecessors": ["J1"],
+    "requiredSpecializations": ["Бізнес-аналіз і проєктування"],
+    "hours": 32,
+    "assignees": ["P1"]
+  },
+  {
+    "id": "J3",
+    "name": "Розроблення серверної частини",
+    "duration": 6,
+    "priority": 5,
+    "predecessors": ["J2"],
+    "requiredSpecializations": ["Серверна розробка"],
+    "hours": 48,
+    "assignees": ["P2"]
+  },
+  {
+    "id": "J4",
+    "name": "Розроблення інтерфейсу",
+    "duration": 5,
+    "priority": 4,
+    "predecessors": ["J2"],
+    "requiredSpecializations": ["Frontend-розробка"],
+    "hours": 40,
+    "assignees": ["P3"]
+  },
+  {
+    "id": "J5",
+    "name": "Інтеграція компонентів",
+    "duration": 3,
+    "priority": 4,
+    "predecessors": ["J3", "J4"],
+    "requiredSpecializations": ["Серверна розробка", "Frontend-розробка"],
+    "hours": 48,
+    "assignees": ["P2", "P3"]
+  },
+  {
+    "id": "J6",
+    "name": "Тестування",
+    "duration": 4,
+    "priority": 5,
+    "predecessors": ["J5"],
+    "requiredSpecializations": ["Тестування та розгортання"],
+    "hours": 32,
+    "assignees": ["P4"]
+  },
+  {
+    "id": "J7",
+    "name": "Підготовка документації",
+    "duration": 3,
+    "priority": 2,
+    "predecessors": ["J2"],
+    "requiredSpecializations": ["Бізнес-аналіз і проєктування"],
+    "hours": 24,
+    "assignees": ["P1"]
+  },
+  {
+    "id": "J8",
+    "name": "Розгортання системи",
+    "duration": 2,
+    "priority": 5,
+    "predecessors": ["J6", "J7"],
+    "requiredSpecializations": ["Тестування та розгортання"],
+    "hours": 16,
+    "assignees": ["P4"]
+  }
+]

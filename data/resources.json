@@ -1,0 +1,22 @@
+[
+  {
+    "id": "P1",
+    "specialization": "Бізнес-аналіз і проєктування",
+    "availability": 8
+  },
+  {
+    "id": "P2",
+    "specialization": "Серверна розробка",
+    "availability": 8
+  },
+  {
+    "id": "P3",
+    "specialization": "Frontend-розробка",
+    "availability": 8
+  },
+  {
+    "id": "P4",
+    "specialization": "Тестування та розгортання",
+    "availability": 8
+  }
+]
